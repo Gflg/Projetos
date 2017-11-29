@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ act()
+comment0.text=private\ char\ Direction[]\ \=\ {'N',\ 'S',\ 'E',\ 'W'};\r\n\ \ \ \ \r\n\ \ \ \ private\ string\ folder\ \=\ "Sword/"\r\n\ \ \ \ \r\n\ \ \ \ private\ GreenfootImage\ N;\r\n\ \ \ \ private\ GreenfootImage\ S;\r\n\ \ \ \ private\ GreenfootImage\ E;\r\n\ \ \ \ private\ GreenfootImage\ W;\r\n\ \ \ \ \r\n\ \ \ \ public\ Sword()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ GreenfootImage\ SpriteAux;\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ for\ (char\ dir\ \:\ Direction)\r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ SpriteAux\ \=\ new\ GreenfootImage(folder+dir);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \ \ \ \ if\ (dir\ \=\=\ 'N')\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ N\ \=\ SpriteAux;\r\n\ \ \ \ \ \ \ \ \ \ \ \ else\ if\ (dir\ \=\=\ 'S')\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ S\ \=\ SpriteAux;\r\n\ \ \ \ \ \ \ \ \ \ \ \ else\ if\ (dir\ \=\=\ 'E')\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ E\ \=\ SpriteAux;\r\n\ \ \ \ \ \ \ \ \ \ \ \ else\ if\ (dir\ \=\=\ 'W')\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ W\ \=\ SpriteAux;\r\n\ \ \ \ \ \ \ \ }\r\n}
+numComments=1

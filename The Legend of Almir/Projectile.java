@@ -1,0 +1,47 @@
+import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
+
+/**
+ * Write a description of class Projectile here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Projectile extends Mover
+{
+    /**
+     * Act - do whatever the Projectile wants to do. This method is called whenever
+     * the 'Act' or 'Run' button gets pressed in the environment.
+     */
+    
+    private boolean countdown = false;
+    
+    private int count = 5;
+    
+    public void act() 
+    {
+        move(5);
+        
+        if (countdown)
+        {
+            count--;
+            
+            if (count == 0)
+            {
+                getWorld().removeObject(this);
+                return;
+            }
+        }
+        
+        
+        if(atWorldEdge())
+        {
+            getWorld().removeObject(this);
+            return;
+        }
+    }
+    
+    public void reflected()
+    {
+        countdown = true;
+    }
+}

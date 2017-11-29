@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Labirinto()
+comment1.params=
+comment1.target=void\ prepare()
+comment2.params=
+comment2.target=void\ remove()
+comment3.params=
+comment3.target=void\ remove2()
+comment4.params=
+comment4.target=void\ remove3()
+comment5.params=
+comment5.target=void\ add()
+numComments=6

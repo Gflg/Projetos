@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=index\ row\ column
+comment0.target=void\ make(int,\ int,\ int)
+comment1.params=tile\ row\ column
+comment1.target=void\ make(Tile,\ int,\ int)
+numComments=2
