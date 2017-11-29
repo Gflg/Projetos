@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Entrada da faixa de tempo</title>
+</head>
+<body>
+<form onSubmit="return checkAnswer();">
+	<h2>Escolha a faixa de tempo</h2>
+	<br>
+	<h3>Entre com a data de começo:</h3>
+	<input id="answer" type="date" class="box" autofocus />
+	<br>
+	<h3>Entre com a data de término:</h3>
+	<input id="resposta" type="date" class="box" autofocus/>
+	<br>
+	<input type="submit" class="submit" value="SUBMIT" />
+</form>
+<script>
+	function checkAnswer(){
+		var response = document.getElementById('answer').value;
+		var resposta = document.getElementById('resposta').value;
+		location = 'index.html?&data=' + response + '&data2=' + resposta;
+		return false;
+	}
+
+	function gup( name ){
+		name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+		var regexS = "[\\?&]"+name+"=([^&#]*)";
+		var regex = new RegExp( regexS );
+		var results = regex.exec( window.location.href );
+		if( results == null )
+			return "";
+		else
+			return results[1];
+	}
+</script>
+</body>
+</html>
