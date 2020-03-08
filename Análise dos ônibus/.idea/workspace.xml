@@ -51,7 +51,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Downloads/IC/mapa" />
     <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.web.browsers" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -235,6 +235,11 @@
       <workItem from="1567822205975" duration="141000" />
       <workItem from="1567830817698" duration="75000" />
       <workItem from="1567867769189" duration="2150000" />
+      <workItem from="1567898802086" duration="201000" />
+      <workItem from="1567967598464" duration="1561000" />
+      <workItem from="1567987336756" duration="607000" />
+      <workItem from="1583635043010" duration="722000" />
+      <workItem from="1583635809124" duration="42000" />
     </task>
     <servers />
   </component>

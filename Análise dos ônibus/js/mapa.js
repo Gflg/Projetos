@@ -15,7 +15,7 @@ function initialize() {
     };
 
     map = new google.maps.Map(document.getElementById("mapa"), options);
-    }
+}
 
 initialize();
 
@@ -278,13 +278,22 @@ function carregarPontos(radius) {
                         }
 
                         var data = google.visualization.arrayToDataTable(array);
+                        data.setColumnLabel(1, 'Dia normal');
+                        data.setColumnLabel(2, 'Dia do acidente');
 
                         var options = {
                             title: titulo[casa],
+                            titleTextStyle: {
+                                fontSize: 20
+                            },
                             curveType: 'function',
                             width: 1800,
                             height: 450,
                             hAxis: {
+                                title: 'Tempo',
+                                titleTextStyle: {
+                                    fontSize: 20
+                                },
                                 ticks: [{v: 0, f: horario[6]}, {v: 6, f: horario[5]}, {
                                     v: 12,
                                     f: horario[4]
@@ -296,9 +305,15 @@ function carregarPontos(radius) {
                                     f: horario[10]
                                 }]
                             },
-                            vAxis: {ticks: v[casa]},
-                            series: {0: {color: 'black'}},
-                            legend: {position: 'bottom'}
+                            vAxis: {
+                                ticks: v[casa],
+                                title: 'Minutos',
+                                titleTextStyle: {
+                                    fontSize: 20
+                                }
+                            },
+                            series: {0: {color: '0000ff'}},
+                            legend: {textStyle: {fontSize: 18}}
                         };
 
                         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -360,13 +375,22 @@ function carregarPontos(radius) {
                         }
 
                         var data = google.visualization.arrayToDataTable(array);
+                        data.setColumnLabel(1, 'Dia normal');
+                        data.setColumnLabel(2, 'Dia do acidente');
 
                         var options = {
                             title: titulo[casa],
+                            titleTextStyle: {
+                                fontSize: 20
+                            },
                             curveType: 'function',
                             width: 1800,
                             height: 450,
                             hAxis: {
+                                title: 'Tempo',
+                                titleTextStyle: {
+                                    fontSize: 20
+                                },
                                 ticks: [{v: 0, f: horario[6]}, {v: 6, f: horario[5]}, {
                                     v: 12,
                                     f: horario[4]
@@ -378,9 +402,15 @@ function carregarPontos(radius) {
                                     f: horario[10]
                                 }]
                             },
-                            vAxis: {ticks: v[casa]},
-                            series: {0: {color: '008000'}},
-                            legend: {position: 'bottom'}
+                            vAxis: {
+                                ticks: v[casa],
+                                title: 'Minutos',
+                                titleTextStyle: {
+                                    fontSize: 20
+                                }
+                            },
+                            series: {0: {color: '0000ff'}},
+                            legend: {textStyle: {fontSize: 18}}
                         };
 
                         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -442,13 +472,22 @@ function carregarPontos(radius) {
                         }
 
                         var data = google.visualization.arrayToDataTable(array);
+                        data.setColumnLabel(1, 'Dia normal');
+                        data.setColumnLabel(2, 'Dia do acidente');
 
                         var options = {
                             title: titulo[casa],
+                            titleTextStyle: {
+                                fontSize: 20
+                            },
                             curveType: 'function',
                             width: 1800,
                             height: 450,
                             hAxis: {
+                                title: 'Tempo',
+                                titleTextStyle: {
+                                    fontSize: 20
+                                },
                                 ticks: [{v: 0, f: horario[6]}, {v: 6, f: horario[5]}, {
                                     v: 12,
                                     f: horario[4]
@@ -460,9 +499,15 @@ function carregarPontos(radius) {
                                     f: horario[10]
                                 }]
                             },
-                            vAxis: {ticks: v[casa]},
-                            series: {0: {color: 'ffff00'}},
-                            legend: {position: 'bottom'}
+                            vAxis: {
+                                ticks: v[casa],
+                                title: 'Minutos',
+                                titleTextStyle: {
+                                    fontSize: 20
+                                }
+                            },
+                            series: {0: {color: '0000ff'}},
+                            legend: {textStyle: {fontSize: 18}}
                         };
 
                         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
@@ -524,13 +569,22 @@ function carregarPontos(radius) {
                         }
 
                         var data = google.visualization.arrayToDataTable(array);
+                        data.setColumnLabel(1, 'Dia normal');
+                        data.setColumnLabel(2, 'Dia do acidente');
 
                         var options = {
                             title: titulo[casa],
+                            titleTextStyle: {
+                                fontSize: 20
+                            },
                             curveType: 'function',
                             width: 1800,
                             height: 450,
                             hAxis: {
+                                title: 'Tempo',
+                                titleTextStyle: {
+                                    fontSize: 20
+                                },
                                 ticks: [{v: 0, f: horario[6]}, {v: 6, f: horario[5]}, {
                                     v: 12,
                                     f: horario[4]
@@ -542,9 +596,15 @@ function carregarPontos(radius) {
                                     f: horario[10]
                                 }]
                             },
-                            vAxis: {ticks: v[casa]},
+                            vAxis: {
+                                ticks: v[casa],
+                                title: 'Minutos',
+                                titleTextStyle: {
+                                    fontSize: 20
+                                }
+                            },
                             series: {0: {color: '0000ff'}},
-                            legend: {position: 'bottom'}
+                            legend: {textStyle: {fontSize: 18}}
                         };
 
                         var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
