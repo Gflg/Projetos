@@ -15,7 +15,7 @@ function initialize() {
     };
 
     map = new google.maps.Map(document.getElementById("mapa"), options);
-}
+    }
 
 initialize();
 
@@ -284,7 +284,7 @@ function carregarPontos(radius) {
                         var options = {
                             title: titulo[casa],
                             titleTextStyle: {
-                                fontSize: 20
+                                fontSize: 26
                             },
                             curveType: 'function',
                             width: 1800,
@@ -312,7 +312,7 @@ function carregarPontos(radius) {
                                     fontSize: 20
                                 }
                             },
-                            series: {0: {color: '0000ff'}},
+                            series: {0: {color: 'black'}},
                             legend: {textStyle: {fontSize: 18}}
                         };
 
@@ -381,7 +381,7 @@ function carregarPontos(radius) {
                         var options = {
                             title: titulo[casa],
                             titleTextStyle: {
-                                fontSize: 20
+                                fontSize: 26
                             },
                             curveType: 'function',
                             width: 1800,
@@ -409,7 +409,7 @@ function carregarPontos(radius) {
                                     fontSize: 20
                                 }
                             },
-                            series: {0: {color: '0000ff'}},
+                            series: {0: {color: '008000'}},
                             legend: {textStyle: {fontSize: 18}}
                         };
 
@@ -478,7 +478,7 @@ function carregarPontos(radius) {
                         var options = {
                             title: titulo[casa],
                             titleTextStyle: {
-                                fontSize: 20
+                                fontSize: 26
                             },
                             curveType: 'function',
                             width: 1800,
@@ -506,7 +506,7 @@ function carregarPontos(radius) {
                                     fontSize: 20
                                 }
                             },
-                            series: {0: {color: '0000ff'}},
+                            series: {0: {color: 'ffff00'}},
                             legend: {textStyle: {fontSize: 18}}
                         };
 
@@ -575,7 +575,7 @@ function carregarPontos(radius) {
                         var options = {
                             title: titulo[casa],
                             titleTextStyle: {
-                                fontSize: 20
+                                fontSize: 26
                             },
                             curveType: 'function',
                             width: 1800,
